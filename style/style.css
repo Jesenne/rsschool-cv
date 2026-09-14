@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    /* background-color: #9A867F; */
+}
+
+a {
+
+    color: #000000;
+    color: #CD553D;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    max-width: 1024px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.avatar {
+    display: block;
+    width: 100%;
+    grid-area: avatar;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "avatar h1"
+        "avatar h2"
+        "nav nav";
+    justify-items: center;
+    align-items: center;
+}
+
+.h1 {
+    grid-area: h1;
+    align-self: end;
+    margin: 5px 0px;
+}
+
+.h2 {
+    grid-area: h2;
+    align-self: start;
+    margin: 5px 0px;
+    font-size: 120%;
+    font-weight: normal;
+}
+
+.nav {
+    grid-area: nav;
+    width: 100%;
+}
+
+.nav ul {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
+}
+
+.nav li {
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    /* background-color: #CD553D; */
+    background-color: #E8774B;
+}
+
+.nav li,
+.nav li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 80%;
+}
+
+.footer a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+}
+
+.rs_logo {
+    width: 32px;
+    height: 32px;
+}
+
+.github_logo {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+pre {
+    background-color: #eeeeee;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    border: 1px solid #999;
+    padding: 5px;
+}
+
+table tr:nth-child(even) {
+    background-color: #eeeeee;
+}
