@@ -4,6 +4,16 @@ body {
     /* background-color: #9A867F; */
 }
 
+a {
+
+    color: #000000;
+    color: #CD553D;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 .container {
     font-family: Arial, sans-serif;
     font-size: 14px;
@@ -42,6 +52,8 @@ body {
     grid-area: h2;
     align-self: start;
     margin: 5px 0px;
+    font-size: 120%;
+    font-weight: normal;
 }
 
 .nav {
@@ -69,8 +81,8 @@ body {
 .nav li,
 .nav li a {
     color: #ffffff;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .footer {
@@ -83,17 +95,36 @@ body {
 
 .footer a {
     display: block;
-    text-decoration: none;
     color: #000000;
+    text-decoration: none;
 }
 
-.footer .rs_logo {
+.rs_logo {
     width: 32px;
     height: 32px;
 }
 
-.footer .github_logo {
+.github_logo {
     width: 16px;
     height: 16px;
     vertical-align: text-bottom;
+}
+
+pre {
+    background-color: #eeeeee;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    border: 1px solid #999;
+    padding: 5px;
+}
+
+table tr:nth-child(even) {
+    background-color: #eeeeee;
 }
